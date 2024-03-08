@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "0a22d658-306f-4ac9-a1ba-f9cb0ea4d0c9",
+		"name": "BookStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "2598376"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/books"
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"book1\",\n    \"author\": \"author1\",\n    \"category\": \"testCategory\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/books"
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"book2\",\n    \"author\": \"author2\",\n    \"category\": \"testCategory2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/books/3ee72914-ff2e-4103-8a16-4f04baa9d259"
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/books/d2e423a3-f741-490f-803d-6d4bd92f16d5"
+			},
+			"response": []
+		}
+	]
+}
